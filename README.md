@@ -4,8 +4,31 @@ This is svelte skeleton template. It is a simple template that includes a basic 
 
 ## Prerequisites
 
+### Resources
+
 1. Node.js https://nodejs.org/en
 2. Git https://git-scm.com/
+
+### VS Code Extension
+
+1. `Svelte for VS Code` by Svelte
+2. `Prettier - Code formatter` by Prettier
+3. `SCSS Formatter` by Sibiraj S
+
+Optional
+
+1. `Color Highlight` by Sergii N
+2. `Material Icon Theme` by Philipp Kief
+    - You can change the color of the folder icon by pressing "Ctrl + Shift + P" and search for `Material Icons: Change Folder Color`. Then select the color you want. This helps with visualizing the folder structure, if you have a lot of folders.
+
+### VS Code Settings
+
+1. Setting > `Label Format` > Short
+2. Setting > Workbench > `Tree: Indent` > 12 or 16 //default is 8
+3. Setting > `Explorer: Sort Order`
+4. Settings > `Explorer: Compact Folders` > unchecked
+
+To find these settings, search for the highlighted keywords in the search bar, it should be the first option.
 
 ## Installation
 
