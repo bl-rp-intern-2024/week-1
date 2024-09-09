@@ -35,35 +35,35 @@ This is svelte skeleton template. It is a simple template that includes a basic 
 
 1. In the same file, add a style tag at the bottom of the file. Then give the h1 tag a color of red, and font-family of Arial. Save the file, and you should see the changes.
 
-   Your +page.svelte file should look like this:
+    Your +page.svelte file should look like this:
 
-   ```html
-   <h1>Hello World</h1>
+    ```html
+    <h1>Hello World</h1>
 
-   <style>
-   	h1 {
-   		color: red;
-   		font-family: 'Arial';
-   	}
-   </style>
-   ```
+    <style>
+    	h1 {
+    		color: red;
+    		font-family: 'Arial';
+    	}
+    </style>
+    ```
 
 ### Creating a new page
 
 1. In the same `+page.svelte file`, right below `<h1>`, add an `<a>` element with a `href` attribute of `"/contact"`.
 
-   ```html
-   <a href="/contact">Contact Me</a>
-   ```
+    ```html
+    <a href="/contact">Contact Me</a>
+    ```
 
 2. Click on the link, you should see a 404 page. This is because we haven't created the contact page yet.
 
 3. Create a new folder named `contact` inside `src/routes`, and then create a new file called `+page.svelte` within this folder. The file location should be `src/routes/contact/+page.svelte`. Open the file and add the following code:
 
-   ```html
-   <h1>Contact Me</h1>
-   <p>You can <a href="mailto:me@email.com">contact me here</a>.</p>
-   ```
+    ```html
+    <h1>Contact Me</h1>
+    <p>You can <a href="mailto:me@email.com">contact me here</a>.</p>
+    ```
 
 4. Save the file, and go back to the browser and click on the link. You should see the contact page.
 
@@ -73,100 +73,100 @@ This is svelte skeleton template. It is a simple template that includes a basic 
 
 1. Open the file `src/routes/+page.svelte`, and replace the content with the following code:
 
-   ```html
-   <div class="card">
-   	<div class="img-container">
-   		<img src="cat.jpg" alt="" />
-   	</div>
-   	<div class="user">
-   		<div class="name">My Name</div>
-   		<div class="position">Software Developer</div>
-   	</div>
+    ```html
+    <div class="card">
+    	<div class="img-container">
+    		<img src="cat.jpg" alt="" />
+    	</div>
+    	<div class="user">
+    		<div class="name">My Name</div>
+    		<div class="position">Software Developer</div>
+    	</div>
 
-   	<p>
-   		Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius provident qui, nisi at eaque
-   		doloribus eveniet adipisci perspiciatis sequi magni iste nulla ducimus!
-   	</p>
+    	<p>
+    		Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius provident qui, nisi at
+    		eaque doloribus eveniet adipisci perspiciatis sequi magni iste nulla ducimus!
+    	</p>
 
-   	<div class="actions">
-   		<a class="outlined" href="https://www.instagram.com/myHandle/">Follow</a>
-   		<a href="/contact">Contact</a>
-   	</div>
-   </div>
+    	<div class="actions">
+    		<a class="outlined" href="https://www.instagram.com/myHandle/">Follow</a>
+    		<a href="/contact">Contact</a>
+    	</div>
+    </div>
 
-   <style>
-   	.card {
-   		box-sizing: border-box;
-   		font-family: Arial, Helvetica, sans-serif;
-   		display: flex;
-   		flex-direction: column;
-   		align-items: center;
-   		width: 300px;
-   		height: auto;
-   		border-radius: 1rem;
-   		background-color: #4c566a;
-   		padding: 2rem;
-   		gap: 1rem;
-   		color: #d8dee9;
-   	}
-   	.img-container {
-   		height: 128px;
-   		width: 128px;
-   		border-radius: 100%;
-   		overflow: clip;
-   		border: 4px solid transparent;
-   		outline: 4px solid #d8dee9;
-   	}
-   	.img-container img {
-   		width: 100%;
-   		height: 100%;
-   		object-fit: cover;
-   		transition: transform 0.3s;
-   	}
-   	.img-container img:hover {
-   		transform: scale(1.1);
-   	}
-   	.user {
-   		display: flex;
-   		flex-direction: column;
-   		align-items: center;
-   	}
-   	.user .name {
-   		font-size: 1.25rem;
-   		font-weight: 600;
-   	}
-   	p {
-   		margin: 0;
-   		font-size: 0.875rem;
-   		text-align: center;
-   	}
-   	.actions {
-   		display: flex;
-   		gap: 1rem;
-   		margin-inline: auto;
-   	}
-   	.actions a {
-   		margin-top: 1rem;
-   		text-decoration: none;
-   		background-color: #d8dee9;
-   		color: #4c566a;
-   		font-weight: 600;
-   		display: flex;
-   		align-items: center;
-   		padding-block: 0.75rem;
-   		padding-inline: 1.5rem;
-   		border-radius: 0.375rem;
-   	}
-   	.actions a.outlined {
-   		border: 1px solid #d8dee9;
-   		color: #d8dee9;
-   		background-color: transparent;
-   	}
-   	a:hover {
-   		filter: brightness(1.05) hue-rotate(180deg);
-   	}
-   </style>
-   ```
+    <style>
+    	.card {
+    		box-sizing: border-box;
+    		font-family: Arial, Helvetica, sans-serif;
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		width: 300px;
+    		height: auto;
+    		border-radius: 1rem;
+    		background-color: #4c566a;
+    		padding: 2rem;
+    		gap: 1rem;
+    		color: #d8dee9;
+    	}
+    	.img-container {
+    		height: 128px;
+    		width: 128px;
+    		border-radius: 100%;
+    		overflow: clip;
+    		border: 4px solid transparent;
+    		outline: 4px solid #d8dee9;
+    	}
+    	.img-container img {
+    		width: 100%;
+    		height: 100%;
+    		object-fit: cover;
+    		transition: transform 0.3s;
+    	}
+    	.img-container img:hover {
+    		transform: scale(1.1);
+    	}
+    	.user {
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    	}
+    	.user .name {
+    		font-size: 1.25rem;
+    		font-weight: 600;
+    	}
+    	p {
+    		margin: 0;
+    		font-size: 0.875rem;
+    		text-align: center;
+    	}
+    	.actions {
+    		display: flex;
+    		gap: 1rem;
+    		margin-inline: auto;
+    	}
+    	.actions a {
+    		margin-top: 1rem;
+    		text-decoration: none;
+    		background-color: #d8dee9;
+    		color: #4c566a;
+    		font-weight: 600;
+    		display: flex;
+    		align-items: center;
+    		padding-block: 0.75rem;
+    		padding-inline: 1.5rem;
+    		border-radius: 0.375rem;
+    	}
+    	.actions a.outlined {
+    		border: 1px solid #d8dee9;
+    		color: #d8dee9;
+    		background-color: transparent;
+    	}
+    	a:hover {
+    		filter: brightness(1.05) hue-rotate(180deg);
+    	}
+    </style>
+    ```
 
 2. Add an image in `static` folder, give it a name like `cat.jpg` or any other name. You can use any image you like. Replace the `src` attribute in the `img` tag at line 3 with the name of the image.
 
@@ -178,173 +178,173 @@ This is svelte skeleton template. It is a simple template that includes a basic 
 
 6. Open `svelte.config.js` file in the root directory, and add the following code at line 2:
 
-   ```js
-   import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-   ```
+    ```js
+    import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+    ```
 
-   then add the following code after the closing bracket of kit.
+    then add the following code after the closing bracket of kit.
 
-   ```js
-   preprocess: [vitePreprocess()];
-   ```
+    ```js
+    preprocess: [vitePreprocess()];
+    ```
 
-   it should look like this, after removing the comments:
+    it should look like this, after removing the comments:
 
-   ```js
-   import adapter from '@sveltejs/adapter-auto';
-   import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+    ```js
+    import adapter from '@sveltejs/adapter-auto';
+    import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-   /** @type {import('@sveltejs/kit').Config} */
-   const config = {
-   	kit: {
-   		adapter: adapter()
-   	},
-   	preprocess: [vitePreprocess()]
-   };
+    /** @type {import('@sveltejs/kit').Config} */
+    const config = {
+    	kit: {
+    		adapter: adapter()
+    	},
+    	preprocess: [vitePreprocess()]
+    };
 
-   export default config;
-   ```
+    export default config;
+    ```
 
-   Save the file, and in the terminal, you should see a message that says "server restarted"
+    Save the file, and in the terminal, you should see a message that says "server restarted"
 
 7. Now go back to the `+page.svelte file`, and change the style tag to a style tag with `lang="scss"`. It should look like this:
 
-   ```html
-   <style lang="scss">
-   	...
-   </style>
-   ```
+    ```html
+    <style lang="scss">
+    	...
+    </style>
+    ```
 
 8. Save the file, and go back to the browser. You should see the same card as before. Now we can refactor css to scss.
 
 9. In SCSS, we can nest classes within parent classes. For example, if the `img-container` is inside `card`, we can nest `img-container` within the card class. Similarly, since the `img` tag is inside the `img-container` class, we can nest the `img` tag within `img-container`. This makes the code more readable.
 
-   ```scss
-   .card {
-   	box-sizing: border-box;
-   	font-family: Arial, Helvetica, sans-serif;
-   	display: flex;
-   	flex-direction: column;
-   	align-items: center;
-   	width: 300px;
-   	height: auto;
-   	border-radius: 1rem;
-   	background-color: #4c566a;
-   	padding: 2rem;
-   	gap: 1rem;
-   	color: #d8dee9;
+    ```scss
+    .card {
+    	box-sizing: border-box;
+    	font-family: Arial, Helvetica, sans-serif;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	width: 300px;
+    	height: auto;
+    	border-radius: 1rem;
+    	background-color: #4c566a;
+    	padding: 2rem;
+    	gap: 1rem;
+    	color: #d8dee9;
 
-   	.img-container {
-   		height: 128px;
-   		width: 128px;
-   		border-radius: 100%;
-   		overflow: clip;
-   		border: 4px solid transparent;
-   		outline: 4px solid #d8dee9;
+    	.img-container {
+    		height: 128px;
+    		width: 128px;
+    		border-radius: 100%;
+    		overflow: clip;
+    		border: 4px solid transparent;
+    		outline: 4px solid #d8dee9;
 
-   		img {
-   			width: 100%;
-   			height: 100%;
-   			object-fit: cover;
-   			transition: transform 0.3s;
-   			&:hover {
-   				transform: scale(1.1);
-   			}
-   		}
-   	}
-   }
-   ```
+    		img {
+    			width: 100%;
+    			height: 100%;
+    			object-fit: cover;
+    			transition: transform 0.3s;
+    			&:hover {
+    				transform: scale(1.1);
+    			}
+    		}
+    	}
+    }
+    ```
 
-   `name` are inside `user` class, therefore we can nest them inside `user` class.
+    `name` are inside `user` class, therefore we can nest them inside `user` class.
 
-   ```scss
-   .user {
-   	display: flex;
-   	flex-direction: column;
-   	align-items: center;
-   	.name {
-   		font-size: 1.25rem;
-   		font-weight: 600;
-   	}
-   }
-   ```
+    ```scss
+    .user {
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	.name {
+    		font-size: 1.25rem;
+    		font-weight: 600;
+    	}
+    }
+    ```
 
-   Try to refactor the rest of the code to SCSS. There will be no visible changes in the browser, but the code will be more readable and maintainable. After refactoring check the below code to see if you have done it correctly.
+    Try to refactor the rest of the code to SCSS. There will be no visible changes in the browser, but the code will be more readable and maintainable. After refactoring check the below code to see if you have done it correctly.
 
-   ```scss
-   <style lang="scss">
-   		.card {
-   				box-sizing: border-box;
-   				font-family: Arial, Helvetica, sans-serif;
-   				display: flex;
-   				flex-direction: column;
-   				align-items: center;
-   				width: 300px;
-   				height: auto;
-   				border-radius: 1rem;
-   				background-color: #4c566a;
-   				padding: 2rem;
-   				gap: 1rem;
-   				color: #d8dee9;
-   				.img-container {
-   						height: 128px;
-   						width: 128px;
-   						border-radius: 100%;
-   						overflow: clip;
-   						border: 4px solid transparent;
-   						outline: 4px solid #d8dee9;
-   						img {
-   								width: 100%;
-   								height: 100%;
-   								object-fit: cover;
-   								transition: transform 0.3s;
-   								&:hover {
-   										transform: scale(1.1);
-   								}
-   						}
-   				}
-   		}
-   		.user {
-   				display: flex;
-   				flex-direction: column;
-   				align-items: center;
-   				.name {
-   						font-size: 1.25rem;
-   						font-weight: 600;
-   				}
-   		}
-   		p {
-   				margin: 0;
-   				font-size: 0.875rem;
-   				text-align: center;
-   		}
-   		.actions {
-   				display: flex;
-   				gap: 1rem;
-   				margin-inline: auto;
-   				a {
-   						margin-top: 1rem;
-   						text-decoration: none;
-   						background-color: #d8dee9;
-   						color: #4c566a;
-   						font-weight: 600;
-   						display: flex;
-   						align-items: center;
-   						padding-block: 0.75rem;
-   						padding-inline: 1.5rem;
-   						border-radius: 0.375rem;
-   						&.outlined {
-   								border: 1px solid #d8dee9;
-   								color: #d8dee9;
-   								background-color: transparent;
-   						}
-   						&:hover {
-   								filter: brightness(1.05) hue-rotate(180deg);
-   						}
-   				}
-   		}
-   </style>
-   ```
+    ```scss
+    <style lang="scss">
+    	.card {
+    		box-sizing: border-box;
+    		font-family: Arial, Helvetica, sans-serif;
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		width: 300px;
+    		height: auto;
+    		border-radius: 1rem;
+    		background-color: #4c566a;
+    		padding: 2rem;
+    		gap: 1rem;
+    		color: #d8dee9;
+    		.img-container {
+    			height: 128px;
+    			width: 128px;
+    			border-radius: 100%;
+    			overflow: clip;
+    			border: 4px solid transparent;
+    			outline: 4px solid #d8dee9;
+    			img {
+    				width: 100%;
+    				height: 100%;
+    				object-fit: cover;
+    				transition: transform 0.3s;
+    				&:hover {
+    					transform: scale(1.1);
+    				}
+    			}
+    		}
+    	}
+    	.user {
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		.name {
+    			font-size: 1.25rem;
+    			font-weight: 600;
+    		}
+    	}
+    	p {
+    		margin: 0;
+    		font-size: 0.875rem;
+    		text-align: center;
+    	}
+    	.actions {
+    		display: flex;
+    		gap: 1rem;
+    		margin-inline: auto;
+    	a {
+    		margin-top: 1rem;
+    		text-decoration: none;
+    		background-color: #d8dee9;
+    		color: #4c566a;
+    		font-weight: 600;
+    		display: flex;
+    		align-items: center;
+    		padding-block: 0.75rem;
+    		padding-inline: 1.5rem;
+    		border-radius: 0.375rem;
+    		&.outlined {
+    			border: 1px solid #d8dee9;
+    			color: #d8dee9;
+    			background-color: transparent;
+    		}
+    		&:hover {
+    			filter: brightness(1.05) hue-rotate(180deg);
+    		}
+    	}
+    }
+    </style>
+    ```
 
 ### Layouts
 
@@ -356,41 +356,41 @@ Layouts are used to wrap around the content of a page. For example, if you have 
 
 3. Now we can add header to the page. You can copy the following code to `+layout.svelte`
 
-   ```html
-   <header>
-   	<nav>
-   		<a href="/">Home</a>
-   		<a href="/about">About</a>
-   		<a href="/contact">Contact</a>
-   	</nav>
-   </header>
+    ```html
+    <header>
+    	<nav>
+    		<a href="/">Home</a>
+    		<a href="/about">About</a>
+    		<a href="/contact">Contact</a>
+    	</nav>
+    </header>
 
-   <main>
-   	<slot />
-   </main>
+    <main>
+    	<slot />
+    </main>
 
-   <style lang="scss">
-   	header {
-   		nav {
-   			padding-block: 1rem;
-   			display: flex;
-   			gap: 2rem;
-   			justify-content: center;
-   			a {
-   				font-size: 1rem;
-   				font-weight: 600;
-   				text-decoration: none;
-   				color: inherit;
-   			}
-   		}
-   	}
-   	main {
-   		display: flex;
-   		justify-content: center;
-   		padding-top: 2rem;
-   	}
-   </style>
-   ```
+    <style lang="scss">
+    	header {
+    		nav {
+    			padding-block: 1rem;
+    			display: flex;
+    			gap: 2rem;
+    			justify-content: center;
+    			a {
+    				font-size: 1rem;
+    				font-weight: 600;
+    				text-decoration: none;
+    				color: inherit;
+    			}
+    		}
+    	}
+    	main {
+    		display: flex;
+    		justify-content: center;
+    		padding-top: 2rem;
+    	}
+    </style>
+    ```
 
 4. Save the file, and go back to the browser. You should see a header with links to Home, and Contact. The content of the page should be centered. Clicking on about should show a 404 page, because we haven't created the about page yet. But the header should be visible on all pages.
 
@@ -400,25 +400,25 @@ Layouts are used to wrap around the content of a page. For example, if you have 
 
 2. Create a new file at `src/main.scss`. This file will contain the global styles. Add the following code to the file:
 
-   ```scss
-   body {
-   	margin: 0;
-   	padding: 0;
-   	font-family: Arial, Helvetica, sans-serif;
-   	background-color: #2e3440;
-   	color: #d8dee9;
-   }
-   ```
+    ```scss
+    body {
+    	margin: 0;
+    	padding: 0;
+    	font-family: Arial, Helvetica, sans-serif;
+    	background-color: #2e3440;
+    	color: #d8dee9;
+    }
+    ```
 
 3. Back to `+layout.svelte file`, create a `script` tag at the top of the file, and import the `main.scss` file. It should look like this:
 
-   ```html
-   <script>
-   	import '../main.scss';
-   </script>
+    ```html
+    <script>
+    	import '../main.scss';
+    </script>
 
-   ...
-   ```
+    ...
+    ```
 
 4. Save the file, and go back to the browser. You should see the background color in navy.
 
@@ -426,20 +426,20 @@ Layouts are used to wrap around the content of a page. For example, if you have 
 
 6. Fonts also can be imported in the `main.scss` file. For example, if you want to use a [google font](https://fonts.google.com/) , you can import it in the `main.scss` file. We usually place them at the top of the file.
 
-   ```scss
-   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-   ```
+    ```scss
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    ```
 
-   Then in the `body` tag, you can set the `font-family` to the imported font.
+    Then in the `body` tag, you can set the `font-family` to the imported font.
 
-   ```scss
-   body{
-   	font-family: 'Poppins', sans-serif;
-   	...
-   }
-   ```
+    ```scss
+    body{
+    	font-family: 'Poppins', sans-serif;
+    	...
+    }
+    ```
 
-   Save the file, and go back to the browser. You should see the font change to the imported font, except for text inside the card, because we have set the `font-family` to Arial. Go back to the `+page.svelte` file, and remove the `font-family` from the card class. It will inherit the `font-family` from the body tag.
+    Save the file, and go back to the browser. You should see the font change to the imported font, except for text inside the card, because we have set the `font-family` to Arial. Go back to the `+page.svelte` file, and remove the `font-family` from the card class. It will inherit the `font-family` from the body tag.
 
 ## Conclusion
 
